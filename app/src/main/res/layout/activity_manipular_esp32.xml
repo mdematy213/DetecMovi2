@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1C">
+
+    <!-- Encabezado: nombre del usuario logueado -->
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Usuario"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:background="#4E2B0E"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/tvTituloManipular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manipular Circuito"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#D4A017"
+                android:textAlignment="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <!-- Estado actual (leído en tiempo real desde Firebase) -->
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado: conectando…"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#AAAAAA"
+                android:textAlignment="center" />
+
+            <!-- Última distancia medida por el HC-SR04 -->
+            <TextView
+                android:id="@+id/tvDistancia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distancia: -- cm"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Botón Activar -->
+            <Button
+                android:id="@+id/btnActivar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Activar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1B5E20"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Botón Desactivar -->
+            <Button
+                android:id="@+id/btnDesactivar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Desactivar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#7B0000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Botón de prueba: simula una lectura del sensor (útil sin el ESP32 conectado) -->
+            <Button
+                android:id="@+id/btnSimular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Simular lectura del sensor"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2E2E2E"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B0000"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

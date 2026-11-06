@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1C">
+
+    <!-- Encabezado Bienvenido -->
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido(a) : "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:background="#4E2B0E"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloEstadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#D4A017"
+        android:textAlignment="center"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp" />
+
+    <!-- Contenedor de estadísticas -->
+    <LinearLayout
+        android:id="@+id/llContenedorEstadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2A2A2A"
+        android:padding="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- Activaciones -->
+        <LinearLayout
+            android:id="@+id/llFilaActivaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/tvLblActivaciones"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Activaciones"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepActivaciones"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tvActivaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Desactivaciones -->
+        <LinearLayout
+            android:id="@+id/llFilaDesactivaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/tvLblDesactivaciones"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Desactivaciones"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepDesactivaciones"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tvDesactivaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Obstáculos Detectados -->
+        <LinearLayout
+            android:id="@+id/llFilaObstaculos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/tvLblObstaculos"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Obstáculos Detectados"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepObstaculos"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tvObstaculos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Distancia Total -->
+        <LinearLayout
+            android:id="@+id/llFilaDistanciaTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLblDistanciaTotal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Distancia Total"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepDistanciaTotal"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tvDistanciaTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="46 cm"
+                android:textColor="#D4A017"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B0000"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+</LinearLayout>

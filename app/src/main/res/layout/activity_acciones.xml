@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1C">
+
+    <!-- Encabezado: nombre del usuario logueado -->
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Usuario"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:background="#4E2B0E"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloAcciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Acciones"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#D4A017"
+        android:textAlignment="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp" />
+
+    <!-- Mensaje de estado (cargando / sin datos) -->
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargando acciones…"
+        android:textSize="13sp"
+        android:textColor="#888888"
+        android:textAlignment="center"
+        android:paddingBottom="10dp" />
+
+    <!-- Listado de acciones leído desde Firebase -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/llListaAcciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B0000"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

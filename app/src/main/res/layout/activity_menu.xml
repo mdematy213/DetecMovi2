@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1C">
+
+    <!-- Encabezado Bienvenido -->
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido(a) : "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:background="#4E2B0E"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp" />
+
+    <!-- Título Menú -->
+    <TextView
+        android:id="@+id/tvTituloMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="— Menú Principal —"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D4A017"
+        android:textAlignment="center"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp" />
+
+    <!-- Botón Manipular ESP32 -->
+    <Button
+        android:id="@+id/btnManipular"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Manipular ESP32"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E2E2E"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Botón Ver Acciones -->
+    <Button
+        android:id="@+id/btnAcciones"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ver Acciones Realizadas"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E2E2E"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Botón Estadísticas -->
+    <Button
+        android:id="@+id/btnEstadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ver Estadísticas"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E2E2E"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Botón Perfil -->
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ver Perfil"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E2E2E"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Botón Cerrar Sesión -->
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Cerrar Sesión"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B0000"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+</LinearLayout>

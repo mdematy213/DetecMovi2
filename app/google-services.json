@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1020140946986",
+    "firebase_url": "https://detecmov2-default-rtdb.firebaseio.com",
+    "project_id": "detecmov2",
+    "storage_bucket": "detecmov2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020140946986:android:f7b091695f497afdffe553",
+        "android_client_info": {
+          "package_name": "com.example.detecmovi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWUp56kj8DIVgldItSnGooAz3F2i0zeZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

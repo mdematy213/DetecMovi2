@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1C">
+
+    <!-- Encabezado Bienvenido -->
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido(a) : "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:background="#4E2B0E"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Perfil"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#D4A017"
+        android:textAlignment="center"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp" />
+
+    <!-- Contenedor de datos -->
+    <LinearLayout
+        android:id="@+id/llContenedorPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2A2A2A"
+        android:padding="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- RUT -->
+        <LinearLayout
+            android:id="@+id/llPerfilRut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvLblRut"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Rut"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepRut"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvRut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contenido"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Nombre -->
+        <LinearLayout
+            android:id="@+id/llPerfilNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvLblNombre"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepNombre"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contenido"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Apellido -->
+        <LinearLayout
+            android:id="@+id/llPerfilApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvLblApellido"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Apellido"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepApellido"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contenido"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Correo -->
+        <LinearLayout
+            android:id="@+id/llPerfilCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvLblCorreo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Correo"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepCorreo"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contenido"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Cargo -->
+        <LinearLayout
+            android:id="@+id/llPerfilCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvLblCargo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Cargo"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepCargo"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvCargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contenido"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Contraseña -->
+        <LinearLayout
+            android:id="@+id/llPerfilContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLblContrasena"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvSepContrasena"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvContrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contenido"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B0000"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+</LinearLayout>
